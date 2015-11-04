@@ -8,8 +8,23 @@
         {% endfor %}
     </ol>
 
+    
+    
+    
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
+        
+        <!-- Special image -->
+        
+        <div class="item active">
+            <div class="fill" style="background-image:url('{{ site.placeholderimagesbaseurl }}marco_mo.jpg');"></div>
+            <div class="carousel-caption">
+                <a class="btn btn-primary" href="http://moteam.co/mosead">DONATE!</a>
+            </div>
+        </div>
+        
+        <!-- -->
+        
         {% for image in page.carousel %}
         <div class="item{% if forloop.first %} active{% endif %}">
             <div class="fill" style="background-image:url('{{ site.placeholderimagesbaseurl }}{{ image.img }}{% if img.txt %}&text={{ img.txt }}{% endif %}');"></div>
